@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>ChatApp - Inicio Sesion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 h-screen bg-gradient-to-r from-cyan-500 to-emerald-500 p-0">
+    <div class="grid grid-cols-1 sm:grid-cols-3 sm:grid-cols-3  h-full  p-4 sm:p-0">
+        <div class="shadow-2xl flex items-center justify-center bg-white sm:w-[400px] md:w-[380px] lg:w-[530px]">
+            <div class="w-full p-6">
+                <p class="text-[2rem] text-center font-bold">ChatApp</p>
+                <h2 class=" text-center text-xl sm:text-2xl pb-5 pt-5">Inicia Sesion en <span class="text-emerald-500 font-bold">ChatApp</span> para empezar a chatear con tus amigos</h2>
+                <form id="loginForm" class="pt-0 pr-10 pb-0 pl-10 box-border">
+                    <div class="relative border-b border-gray-400 mt-7">
+                        <label for="email" class="text-base">Correo electronico</label>
+                        <input id="email" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="email" placeholder="exampe@example.com">
+                    </div>
+                    <div class="relative border-b border-gray-400 mt-7">
+                        <label for="password"  class="text-base">Contraseña</label>
+                        <input id="password" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="password" placeholder="********">
+                    </div>  
+                    <div id="error-message" class="text-red-500 mt-4 hidden"></div>
+                    <div class="flex flex-col space-y-4 mt-5 ">
+                        <button type="submit" class="py-2 bg-emerald-500 text-white rounded ">Iniciar</button>                      
+                    </div>
+                </form>
+                <div class="pr-10  pl-10  flex flex-col space-y-4 mt-5 ">
+                    <button type="button" class="py-2 bg-gray-500 text-white rounded ">Iniciar como invitado</button>
+                    <a href="/register.html" class="py-2 text-gray-500 text-center rounded hover:text-emerald-500">¿No tienes cuenta? Registrate</a>     
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center p-8 text-center text-white sm:p-16 sm:col-span-2 md:flex hidden">
+            <p class="text-[3rem] lg:text-[4rem] pl-[8rem]">Chat<span class="font-bold">App</span></p>
+            <img src="/src/img/chat-round-dots-svgrepo-com.svg" alt="ChatApp" class="w-20 h-32 filter invert brightness-0 saturate-100">
+        </div>     
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script type="module" src="./src/js/login.js"></script>
+</body>

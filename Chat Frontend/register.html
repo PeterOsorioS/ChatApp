@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>ChatApp - Inicio de Sesión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 h-screen bg-gradient-to-r from-cyan-500 to-emerald-500 sm:p-0 p-4">
+    <script src="js/validate.js"></script>
+    <div class="grid grid-cols-1 md:grid-cols-5 h-full">
+        <!-- Sección izquierda -->
+        <div class="hidden md:flex items-center justify-center p-8 text-center text-white sm:p-16 sm:col-span-3">
+            <p class="text-[3rem] lg:text-[4rem]">Chat<span class="font-bold">App</span></p>
+            <img src="/src/img/chat-round-dots-svgrepo-com.svg" alt="ChatApp" class="w-20 h-32 filter invert brightness-0 saturate-100">
+        </div>
+        <!-- Sección derecha (blanca) -->
+        <!-- Sección derecha (blanca) -->
+    <div class="flex items-center justify-center bg-white shadow-2xl sm:col-span-2 w-full max-w-md mx-auto rounded-lg sm:rounded-none sm:mx-0 sm:ml-auto">
+        <div class="w-full p-6">
+            <p class="text-[2rem] text-center font-bold">ChatApp</p>
+            <h2 class="text-center text-xl sm:text-2xl pb-5 pt-5">Regístrate en <span class="text-emerald-500 font-bold">ChatApp</span> para empezar a chatear.</h2>
+            <form id="registerForm" class="pt-0 pr-10 pb-0 pl-10" method="post">
+                <!-- Campos del formulario -->
+                <div class="relative border-b border-gray-400 mt-7">
+                    <label for="name" class="text-base">Nombre completo</label>
+                    <input id="name" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="text" placeholder="example">
+                </div>
+                <div class="relative border-b border-gray-400 mt-7">
+                    <label for="userName" class="text-base">Nombre de usuario</label>
+                    <input id="userName" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="text" placeholder="example123">
+                </div>
+                <div class="relative border-b border-gray-400 mt-7">
+                    <label for="email" class="text-base">Correo electrónico</label>
+                    <input id="email" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="email" placeholder="example@example.com">
+                </div>
+                <div class="relative border-b border-gray-400 mt-7">
+                    <label for="password" class="text-base">Contraseña</label>
+                    <input id="password" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="password" placeholder="********">
+                </div>
+                <div class="relative border-b border-gray-400 mt-7">
+                    <label for="confirmPassword" class="text-base">Confirmar contraseña</label>
+                    <input id="confirmPassword" class="pt-1 pr-0 pb-1 pl-1 w-full h-10 border-0 bg-transparent text-base outline-none validacion" type="password" placeholder="********">
+                </div>
+                <div id="error-message" class="text-red-500 mt-4 hidden"></div>
+                <div class="flex flex-col space-y-4 mt-5">
+                    <button type="submit" class="py-2 bg-emerald-500 text-white rounded">Registrarse</button>
+                    <a href="/login.html" class="py-2 text-gray-500 text-center rounded hover:text-emerald-500">¿Ya tienes una cuenta? Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    <script type="module" src="../src/js/register.js"></script>
+</body>
+</html>
